@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Теймураз,резюме">
+    <meta name="description" content="Это сайт моего резюме">
+    <title>Теймураз резюме</title>
+</head>
+<br>
+
+    
+ <img src="https://www.fonstola.ru/images/201310/fonstola.ru_129082.jpg" alt="Теймураз Гиоргадзе" width="200">   
+
+
+
+<h1>Теймураз Гиоргадзе</h1>
+
+<p>Я занимался легкой атлетикой. Был <strong>чемпионом</strong> города Тбилиси</p>
+
+<p>Я люблю мороженое,машины и <strong>спорт!</strong> </p>
+
+<h2>мои увлечения</h2>
+
+<ol>
+<li>компьютер</li>
+<li>бокс</li>
+<li>диван</li>
+</ol>
+
+<h2>Опыт работы</h2>
+
+<table>
+<thead>
+<tr>
+    <th>Название</th>
+<th>Должность</th>
+<th>Год</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Металл Маркет</td>
+<td>Фрезеровщик.токарь</td>
+<td>2021-2023</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Связаться со мной</h2>
+
+<br action="/">
+<div>
+<label for="name">Ваше имя</label>     
+<input type="text"placeholder="Напишите имя" id="name">
+</div>
+
+<div>
+    <label for="email">Ваше email</label>     
+    <input type="email"placeholder="Введите почту" id="email">
+    </div>
+
+    <div>
+        <label for="message">Ваше сообщение</label>     
+ <textarea id="message" cols="20"rows="5"></textarea>
+    </div>    
+
+<input type="submit"value="Отправить сообщение!">
+
+</form>
+
+    
+
+
+
+
+
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
+
+
+
+
